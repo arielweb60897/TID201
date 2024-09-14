@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>標籤命名</title>
+    <style>
+      .nav {
+        width: 100px;
+        height: 90px;
+        background-color: #f00f;
+        margin-bottom: 10px;
+      }
+      #master {
+        width: 200px;
+        height: 90px;
+        background-color: #f0f;
+        margin-bottom: 10px;
+      }
+      #slave {
+        width: 200px;
+        height: 90px;
+        background-color: #0f0f;
+        margin-bottom: 10px;
+      }
+      .image_01 {
+        width: 200px;
+      }
+      .border {
+        border: 2px solid #fffb00bb;
+      }
+      /* 也可以寫.spec h3 */
+      .box.spec h3 {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- class可以出現很多次，在css中用.nav
+     ，id同一個html只會出現一次 -->
+    <div id="m1" class="nav">001</div>
+    <div id="m2" class="nav">002</div>
+    <div id="m3" class="nav">003</div>
+    <div id="master"></div>
+    <div id="slave"></div>
+    <div class="nav">004</div>
+    <div class="nav">005</div>
+    <div class="nav">006</div>
+    <div class="box">
+      <div class="spec">
+        <h3>title</h3>
+      </div>
+    </div>
+    <!-- 多個class命名，<複合式類別寫法> -->
+    <img class="image_01 border" src="assets/image.png" alt="" />
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        max-width: 1070px;
+        /* max-height: 624px; */
+        /* background-color: #eee; */
+        margin: auto;
+        margin-top: 10%;
+        font-size: 0; /* 清除 inline-block 之間的空隙 */
+      }
+      .left_text {
+        width: 470px;
+        /* background-color: #cfc; */
+        /* float: left; */
+        display: inline-block;
+        vertical-align: top; /*確保兩個區塊對齊*/
+        font-size: 16px; /* 恢復子元素的字體大小 */
+      }
+      .left_text h2 {
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0 0 5px 0;
+      }
+
+      #text_big {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 0 30px 0;
+        margin: 0;
+      }
+      #text_small {
+        font-style: 12px;
+        margin: 5px 0;
+      }
+      button {
+        color: #fff;
+        background-color: #0076ff;
+        width: 170px;
+        height: 48px;
+        border: 1px solid #00000000;
+        font-size: 16px;
+      }
+      .rignt_img {
+        /* float: right; */
+        display: inline-block;
+        /* width: 400px; 調整右側區域的寬度 */
+        /* height: 200px; */
+        position: relative;
+        margin-left: 100px;
+        /* background-color: #cff; */
+      }
+      .img01,
+      .img02 {
+        width: 300px;
+        height: 384px;
+        border-radius: 7px;
+        font-size: 14px;
+      }
+      .img01 {
+        background-color: #ccf;
+        /* position: absolute; */
+        /* left: 80px;
+        top: 10px; */
+      }
+      .img02 {
+        background-color: #fcf;
+        position: absolute;
+        left: 226px;
+        top: 83px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left_text">
+        <h2>Digital design</h2>
+        <p id="text_big">Exceptional level of service</p>
+        <p id="text_small">
+          Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei,
+          at nihil tantas platonem eos. Mazim nemore singulis an ius, nullam
+          ornatus nam ei.
+        </p>
+        <button>Read more</button>
+      </div>
+      <div class="rignt_img">
+        123
+        <div class="img01">圖片1</div>
+        <div class="img02">圖片2</div>
+      </div>
+    </div>
+  </body>
+</html>

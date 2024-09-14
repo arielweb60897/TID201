@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        max-width: 1070px;
+        /* height: 1000px; */
+        /* background-color: #ccf; */
+        margin: auto;
+        /* margin-top: 10%; */
+      }
+      .blue {
+        width: 505px;
+        height: 688px;
+        background-color: #0076ff;
+        position: absolute;
+        left: 0;
+        z-index: -9999;
+      }
+      .right_text {
+        width: 300px;
+        background-color: #cfc;
+        float: right;
+        /* display: inline-block; */
+        /* vertical-align:top; 確保兩個區塊對齊 */
+        font-size: 16px; /* 恢復子元素的字體大小 */
+        /* margin: auto; */
+        position: relative;
+        right: 20px;
+        top: 100px;
+      }
+      .right_text h2 {
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        line-height: 40px;
+      }
+      #text_small {
+        width: 200px;
+        font-style: 10px;
+        /* margin: 5px 0; */
+      }
+      button {
+        color: #fff;
+        background-color: #0076ff;
+        width: 170px;
+        height: 48px;
+        border: 1px solid #00000000;
+        font-size: 16px;
+      }
+      .left_img {
+        width: 400px; /* 調整右側區域的寬度 */
+        height: 200px;
+        background-color: #cff;
+        /* margin-left: 100px; */
+        float: left;
+        position: relative;
+        top: 30px;
+        left: 100px;
+      }
+      .img01 {
+        width: 570px;
+        height: 528px;
+        border-radius: 7px;
+        font-size: 14px;
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="blue"></div>
+      <div class="right_text">
+        <h2>Some of our most</h2>
+        <h2>popular stuff</h2>
+
+        <p id="text_small">
+          Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei,
+          at nihil tantas platonem eos. Mazim nemore singulis an ius, nullam
+          ornatus nam ei.
+        </p>
+        <button>Read more</button>
+      </div>
+      <div class="left_img">
+        <div class="img01">圖片1</div>
+      </div>
+    </div>
+  </body>
+</html>

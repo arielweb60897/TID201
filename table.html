@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200, 200, 200);
+        /* 是一個控制字元間距的屬性 */
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+      }
+
+      td,
+      th {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px 20px;
+      }
+
+      th {
+        background-color: rgb(235, 235, 235);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <h3>儲存格原型</h3>
+      <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>005</td>
+        <td>006</td>
+      </tr>
+        </table>
+      <h3>合併儲存格</h3>
+      <table>
+          <tr>
+            <td colspan="2" style="color: red;">colspan</td>
+            <td  rowspan="2" style="color: blue;">rowspan</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>006</td>
+          </tr>
+      </table>
+      <h3>一般儲存格</h3>
+      <tr>
+        <th>company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <!-- tr*5>td*5 -->
+      <!-- tr>td*5 -->
+      <!-- <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr> -->
+      <!-- tr*5>td*5{00$} -->
+      <!-- <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+      </tr> -->
+    </table>
+  </body>
+</html>
