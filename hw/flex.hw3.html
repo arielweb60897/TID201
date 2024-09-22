@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flew HW</title>
     <style>
-      .header {
+      .header1 .header2 {
         max-width: 1440px;
         height: 80px;
         display: flex;
-        justify-content: space-around;
+      }
+      .header1{
         background-color: #ddd;
+        justify-content: space-around;
+      }
+      .header2{
+        background-color: #000;
+        justify-content: space-between;
       }
       h1 {
         margin: 0;
         padding: 0;
-        /* background-color: #fcf; */
+        background-color: #fcf;
         align-content: center;
+        display: inline-block;
       }
       ul {
+        color: #fff;
         padding: 0;
         margin: 0;
         width: 500px;
         display: flex;
         /* background-color: #cfc; */
-        justify-content: space-between;
+        justify-content: space-around;
       }
       li {
         align-content: center;
@@ -33,6 +41,7 @@
       }
       .socialMedia {
         align-content: center;
+        display: inline-block;
       }
       .socialMedia > div {
         width: 20px;
@@ -43,21 +52,35 @@
         text-align: center;
         display: inline-block;
       }
+      .contest{
+        color: #fff;
+        display: flex;
+        background-color: #0c0;
+        width: 300px;
+      }
+      .contest div{
+        border-color: #f00;
+      }
     </style>
   </head>
   <body>
-    <div class="header">
+    <div class="header1">
       <h1>Logo</h1>
+      <div class="socialMedia">
+        <div>FB</div>
+        <div>X</div>
+        <div>IG</div>
+      </div>
+      <div class="header2">
       <ul>
         <li>About</li>
         <li>Portfolio</li>
         <li>Blog</li>
         <li>Contact</li>
       </ul>
-      <div class="socialMedia">
-        <div>FB</div>
-        <div>X</div>
-        <div>IG</div>
+      <div class="contest">
+        <div>+1-541-754-3010</div>
+        <div>info@gmail.com</div>
       </div>
     </div>
   </body>
