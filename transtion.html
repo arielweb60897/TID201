@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transtion 動畫</title>
+    <style>
+      .btn {
+        padding: 10px 20px;
+        text-align: center;
+        background-color: #ff8800;
+        color: #fff;
+        transition: background-color 0.3s ease;
+      }
+      .rect {
+        padding: 10px 20px;
+        width: 300px;
+        height: 40px;
+        background-color: #ff0000;
+        /* 變得比較平滑 */
+        transition: width 0.4s ease;
+        /* width：指定過渡效果應用於 width 屬性 */
+        /* 0.4s：指定過渡效果的持續時間為 0.4 秒 */
+        /* ease 是一個常見的過渡曲線 */
+      }
+      .rect:hover {
+        width: 500px;
+      }
+      .rect-transform {
+        width: 300px;
+        height: 50px;
+        background-color: #e5ff00;
+        transition: transform 0.4s ease;
+      }
+      .rect-transform:hover {
+        transform: rotate(45deg) scale(2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">按鈕btn</div>
+    <div class="rect">rect</div>
+    <div class="rect-transform"></div>
+  </body>
+</html>
