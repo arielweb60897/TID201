@@ -10,4 +10,5 @@ h1 {
   width: 100px;
   height: 100px;
   background-color: #fcf;
+  border-radius: 50%;
 }
